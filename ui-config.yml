@@ -1,0 +1,27 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-step1"
+      label: "Step1"
+      solveButton: false
+    - name: "02-step2"
+      label: "Step2"
+      solveButton: false
+    - name: "03-step3"
+      label: "Step3"
+      solveButton: false
+    - name: "04-step4"
+      label: "Step4"
+      solveButton: false
+    - name: "05-step5"
+      label: "Step5"
+      solveButton: false
+    - name: "06-step6"
+      label: "Step6"
+      solveButton: false
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty_rhel/ssh/root

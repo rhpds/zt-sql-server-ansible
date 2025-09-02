@@ -1,0 +1,16 @@
+== Run the Ansible Playbook
+
+Now, let’s run our ansible playbook defined in the site.yml file and
+pass it the list of hosts.
+
+[source,bash]
+----
+ansible-playbook -i myhosts site.yml
+----
+
+____
+The playbook has several tasks, and some tasks could take a bit longer
+than usual.
+____
+
+Running the playbook should produce output similar to the following:

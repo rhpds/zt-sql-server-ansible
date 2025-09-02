@@ -1,0 +1,11 @@
+== Verify that Microsoft SQL Server is installed on the machine
+
+To verify that SQL Server is running on the machine, lets use the
+systemctl status command
+
+[source,bash]
+----
+systemctl status mssql-server.service --no-pager
+----
+
+Verify that the Active status is *active (running)*.

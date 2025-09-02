@@ -1,0 +1,21 @@
+---
+site:
+  title: "Installing and configuring Microsoft SQL Server on Red Hat Enterprise Linux using RHEL System Roles"
+  url: https://github.com/rhpds/showroom_template_zero
+  start_page: modules::01-step1.adoc
+
+content:
+  sources:
+    - url: ./
+      start_path: content
+
+ui:
+  bundle:
+    url: https://github.com/rhpds/nookbag-bundle/releases/download/v0.0.3/ui-bundle.zip
+    snapshot: true
+
+output:
+  dir: ./www/www
+
+runtime:
+  cache_dir: ./.cache/antora

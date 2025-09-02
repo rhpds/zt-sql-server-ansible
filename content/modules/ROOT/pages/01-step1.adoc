@@ -1,0 +1,58 @@
+== Validate the environment
+
+____
+For this scenario, `+ansible-core+` has been installed on the system.
+____
+
+RHEL System Roles is a collection of Ansible roles and modules that
+provide a stable and consistent configuration interface to automate and
+manage multiple releases of Red Hat Enterprise Linux. In this step of
+the lab, we will validate if Ansible is available in the environment.
+
+To check if ansible installation is complete, we can use the following
+command -
+
+[source,bash]
+----
+ansible --version
+----
+
+You should see the output below -
+
+In Ansible, the inventory represents machines that Ansible will manage.
+In this example, we will create a inventory file called '`myhosts`' and
+add one group called [[sqlgroup]].
+
+[source,bash]
+----
+echo "[sqlgroup]" > myhosts
+----
+
+Next, add the host to the group. You can have multiple machines under a
+group, but for this scenario we will have only one machine
+(i.e. localhost).
+
+[source,bash]
+----
+echo localhost ansible_connection=local >> myhosts
+----
+
+Verify that the myhosts file has been created:
+
+[source,bash]
+----
+cat myhosts
+----
+
+Next, use the ping module to verify that your inventory is working
+properly:
+
+[source,bash]
+----
+ansible all -i myhosts -m ping
+----
+
+The response should look be:
+
+So, now that we have confirmed Ansible is properly configured, let’s
+look at Ansible Playbooks.
