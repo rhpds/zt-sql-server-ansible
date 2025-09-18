@@ -14,7 +14,7 @@ tee -a ~/site.yml << EOF
   vars:
     mssql_accept_microsoft_odbc_driver_17_for_sql_server_eula: true
     mssql_accept_microsoft_cli_utilities_for_sql_server_eula: true
-    mssql_accept_microsoft_sql_server_2019_standard_eula: true
+    mssql_accept_microsoft_sql_server_standard_eula: true
     mssql_password: "p@55w0rD"
     mssql_edition: Evaluation
     mssql_ip_address: 0.0.0.0
@@ -54,3 +54,6 @@ sed -i -e "s/host1/localhost/g" site.yml &>> /root/post-run.log
 #yum -y install ansible python3 &>> /root/post-run.log
 echo "Installing ansible-core" >> /root/post-run.log
 dnf -y install ansible-core
+
+sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/10/mssql-server-preview.repo
+sudo yum install -y mssql-server
