@@ -17,6 +17,7 @@ tee -a ~/site.yml << EOF
     mssql_accept_microsoft_sql_server_standard_eula: true
     mssql_password: "p@55w0rD"
     mssql_edition: Evaluation
+    mssql_version: 2022
     mssql_ip_address: 0.0.0.0
     mssql_enable_sql_agent: true
     mssql_install_fts: true
