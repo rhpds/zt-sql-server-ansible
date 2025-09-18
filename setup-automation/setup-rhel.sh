@@ -24,7 +24,7 @@ tee -a ~/site.yml << EOF
   vars:
     mssql_accept_microsoft_odbc_driver_17_for_sql_server_eula: true
     mssql_accept_microsoft_cli_utilities_for_sql_server_eula: true
-    mssql_accept_microsoft_sql_server_2019_standard_eula: true
+    mssql_accept_microsoft_sql_server_standard_eula: true
     mssql_password: "p@55w0rD"
     mssql_edition: Evaluation
     mssql_ip_address: 0.0.0.0
