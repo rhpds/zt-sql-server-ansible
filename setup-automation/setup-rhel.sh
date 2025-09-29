@@ -36,6 +36,8 @@ host_key_checking=False
 ssh_args=
 EOF
 
+# retrieve InstPubs.sql
+curl -L https://raw.githubusercontent.com/microsoft/sql-server-samples/refs/heads/master/samples/databases/northwind-pubs/instpubs.sql -o ~/InstPubs.sql
 
 echo "Setting hostname env" >> /root/post-run.log
 export HOSTNAME=`hostname --all-fqdns` &>> /root/post-run.log
