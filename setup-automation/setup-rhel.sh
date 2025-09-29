@@ -39,6 +39,9 @@ EOF
 # retrieve InstPubs.sql
 curl -L https://raw.githubusercontent.com/microsoft/sql-server-samples/refs/heads/master/samples/databases/northwind-pubs/instpubs.sql -o ~/InstPubs.sql
 
+# install nano and vim
+dnf install -y nano vim
+
 echo "Setting hostname env" >> /root/post-run.log
 export HOSTNAME=`hostname --all-fqdns` &>> /root/post-run.log
 
