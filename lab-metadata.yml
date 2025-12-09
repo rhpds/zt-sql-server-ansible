@@ -1,0 +1,17 @@
+---
+lab:
+  name: "Installing and configuring Microsoft SQL Server on Red Hat Enterprise Linux using RHEL System Roles"
+  description:
+    summary: "Use RHEL System Roles to install Microsoft SQL Server 2022 on RHEL 10"
+    goal: "After completing this scenario, users will be able to use Ansible playbooks to install and configure Microsoft SQL Server on Red Hat Enterprise Linux (RHEL)."
+    use_case: "Simplify catalog management by using a single source of truth"
+    concepts:
+      - "Verifying whether ansible is installed on the system"
+      - "Installing the ansible collection for SQL Server"
+      - "Running the playbook to install and configure Microsoft SQL Server on RHEL 10"
+      - "Login to SQL Server and query a table"
+    time_to_complete: "20 min"
+  git_ref:
+    production: "main"
+    development: "dev"
+  maintainer: "Nate Lager, nlager@redhat.com"
