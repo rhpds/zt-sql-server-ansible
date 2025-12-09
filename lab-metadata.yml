@@ -13,5 +13,5 @@ lab:
     time_to_complete: "20 min"
   git_ref:
     production: "main"
-    development: "main"
+    development: "dev"
   maintainer: "Nate Lager, nlager@redhat.com"
