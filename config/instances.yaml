@@ -7,6 +7,7 @@ virtualmachines:
     packages:
       - tmux
     image_size: "40G"
+    register_satellite: false
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
