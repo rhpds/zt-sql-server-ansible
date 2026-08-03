@@ -51,6 +51,3 @@ sed -i -e "s/host1/localhost/g" site.yml &>> /root/post-run.log
 
 echo "Installing ansible-core" >> /root/post-run.log
 dnf -y install ansible-core
-
-# preinstall mssql-server-selinux
-dnf install mssql-server-selinux -y --nobest

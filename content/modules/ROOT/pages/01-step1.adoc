@@ -52,15 +52,7 @@ properly:
 ansible all -i myhosts -m ping
 ----
 
-The response should look like:
-----
-localhost | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/bin/python3"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-----
+The response should look be:
+
 So, now that we have confirmed Ansible is properly configured, let’s
 look at Ansible Playbooks.
