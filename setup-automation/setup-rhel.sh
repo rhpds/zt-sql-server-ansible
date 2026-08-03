@@ -53,4 +53,5 @@ echo "Installing ansible-core" >> /root/post-run.log
 dnf -y install ansible-core
 
 # preinstall mssql-server-selinux
+dnf install -y ansible-collection-microsoft-sql rhel-system-roles
 dnf install mssql-server-selinux -y --nobest
