@@ -1,3 +1,8 @@
+# Unregister and register the VM
+dnf -y remove katello-ca-consumer-*
+subscription-manager clean
+subscription-manager register --activationkey=$ACTIVATION_KEY --org=$ORG_ID --force
+
 !#/bin/bash
 
 touch /root/post-run.log
